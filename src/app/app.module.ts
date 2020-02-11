@@ -3,10 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MessageComponent } from './message/message.component';
+import { AddMessageComponent } from './add-message/add-message.component';
+import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MessageComponent,
+    AddMessageComponent
   ],
   imports: [
     BrowserModule,
