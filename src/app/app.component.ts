@@ -1,5 +1,5 @@
 import { Component, OnChanges } from '@angular/core';
-import { Message } from '../entities/Message';
+import { Message } from './entities/Message';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +9,5 @@ import { Message } from '../entities/Message';
 
 export class AppComponent {
   title = 'exo-meow-translator2';
-  messages: Message[] = [];
-
-  constructor() {
-    this.messages.push({ originalMessage: 'test', translatedMessage: 'miaou'});
-  }
-
-  translateMessage(event: Message) {
-      event.translatedMessage = 'miaou';
-      this.messages.push(event);
-  }
+  constructor() {}
 }
